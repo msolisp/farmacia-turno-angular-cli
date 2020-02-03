@@ -1,0 +1,21 @@
+
+<div class="card bg-light bg-primary mb-3" >
+  <div class="card-header">Comunas</div>
+  <div class="card-body">
+    <h5 class="card-title">Listado de Comunas</h5>
+
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>Código</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let comuna of comunas">
+      <td>{{comuna.value}}</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+</div>
