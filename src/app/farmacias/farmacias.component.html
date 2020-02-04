@@ -1,0 +1,36 @@
+
+<div class="card bg-light bg-primary mb-3" >
+  <div class="card-header">Farmacias</div>
+  <div class="card-body">
+    <h5 class="card-title">Listado de Farmacias</h5>
+
+<table class="table table-bordered table-striped">
+  <thead>
+    <tr>
+      <th>Local nombre</th>
+      <th>Comuna nombre</th>
+      <th>Fecha</th>
+      <th>Local id</th>
+      <th>Localidad nombre</th>
+      <th>Dirección</th>
+      <th>Teléfono</th>
+    
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let farmacia of farmacias">
+      <td>{{farmacia.local_nombre}}</td>
+      <td>{{farmacia.comuna_nombre}}</td>
+      <td>{{farmacia.fecha}}</td>
+      <td>{{farmacia.local_id}}</td>
+      <td>{{farmacia.localidad_nombre}}</td>
+      <td>{{farmacia.local_direccion}}</td>
+      <td>{{farmacia.local_telefono}}</td>
+
+
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+</div>

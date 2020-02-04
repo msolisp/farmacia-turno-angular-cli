@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'turno-farmacias-angular';
+  title = 'Farmacias de turno';
+  developer: string = "Maximiliano Solis";
+
 }
