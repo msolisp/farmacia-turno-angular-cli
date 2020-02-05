@@ -1,40 +1,32 @@
 <div class="card">
-  <div class="card-header"
-  style="text-align:left">
+  <div class="card-header" style="text-align:left">
   <b>Buscar Farmacia de turno</b>
 </div>
 
   <div class="card-body">
-    <form  >
+
+    <form >
         <div class="row">
             <div class="form-group col-sm-3">
-                <label >Comuna</label>
-
-                <input
-                   class="search-input"/>
-
-              <!--  <select >
-                  <option>--Select--</option>
-                  <option>
-                  </option>
-                </select> -->
-
+                <label >Comuna</label><br>
+                <select class="custom-select">
+                   <option value="">Seleccione Comuna</option>
+                   <option *ngFor="let comuna of comunas" >{{comuna.nombre}}></option>
+                </select>
             </div>
-
-            <div class="form-group col-sm-3">
-                <label>Farmacia</label>
-
-                <input
-                   class="search-input"/>
-
-              <!--  <select >
-                  <option >--Select--</option>
-                  <option>
-                  </option>
-                </select>-->
-
-            </div>
-
         </div>
     </form>
+
+    <form >
+        <div class="row">
+            <div class="form-group col-sm-3">
+                <label >Farmacia</label><br>
+                <select class="custom-select">
+                   <option value="">Seleccione Farmacia</option>
+                   <option *ngFor="let farmacia of farmacias" >{{farmacia.local_nombre}}></option>
+                </select>
+            </div>
+        </div>
+    </form>
+
   </div>

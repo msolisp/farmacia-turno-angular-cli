@@ -16,6 +16,7 @@ import { ComunasComponent } from './comunas/comunas.component';
 import { ComunaService } from './comunas/comuna.service';
 
 
+
 const routes : Routes = [
   //{path: '', redirectTo: '/farmacias', pathMatch: 'full'},
   {path: '', component: DirectivaSearchComponent},
@@ -42,7 +43,7 @@ const routes : Routes = [
     AppRoutingModule,
     HttpClientModule,
     RouterModule.forRoot(routes)
-  ],
+    ],
   providers: [FarmaciaService, ComunaService],
   bootstrap: [AppComponent]
 })
